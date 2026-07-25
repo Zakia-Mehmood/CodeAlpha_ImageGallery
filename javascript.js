@@ -1,4 +1,3 @@
-// Lightbox functionality
 const lightbox = document.getElementById('lightbox');
 const images = document.querySelectorAll('.gallery img');
 
@@ -18,7 +17,6 @@ lightbox.addEventListener('click', () => {
   lightbox.classList.remove('active');
 });
 
-// Filter functionality
 function filterGallery(category) {
   const galleries = document.querySelectorAll('.gallery');
   galleries.forEach(gallery => {
@@ -30,7 +28,6 @@ function filterGallery(category) {
   });
 }
 
-// Dark/Light theme toggle
 function toggleTheme() {
   document.body.classList.toggle('dark');
 }
