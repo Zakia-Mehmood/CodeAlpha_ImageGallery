@@ -100,3 +100,32 @@ body.dark .buttons button {
   background: #f0f0f0;
   color: #333;
 }
+
+@media (max-width: 600px) {
+  .gallery img {
+    width: 90%;
+    height: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#lightbox button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+#prev { left: 30px; }
+#next { right: 30px; }
+
+#lightbox button:hover {
+  background: rgba(255, 255, 255, 1);
+}
